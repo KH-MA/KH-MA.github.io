@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>Html page and css box</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Free Web tutorials">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author" content="MA">
+
+    <style>
+      body {
+        background-color: #ffccff;
+      }
+
+      .leve11 {
+        background-color: gray;
+        margin: 20px;
+      }
+
+      .leve12 {
+        background-color: #ffffcc;
+        margin: 20px;
+        padding: 5px;
+      }
+
+      .no-border {
+        border:0px;
+      }
+
+      .border2 {
+        border:2px dashed rgb(187, 187, 187);
+      }
+
+      .box-bk {
+        background-color: rgb(241, 241, 241);
+      }
+
+      .cssborder-bk {
+        background-color: rgb(76, 175, 80);
+      }
+
+      .content-bk {
+        background-color: #FFF;
+      }
+
+      .center {
+        text-align: center;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div style="text-align: left;font-size: 100%;">&lt;html&gt;</div>
+    <div class="leve11">
+      <div style="text-align: left;font-size: 100%;">&lt;head&gt;</div>
+      <div class="leve12">&lt;title&gt;Page title&lt;/title&gt;</div>
+      <div style="text-align: left;font-size: 100%;">&lt;/head&gt;</div>
+    </div>
+    <div class="leve11">
+      <div style="text-align: left;font-size: 100%;">&lt;body&gt;</div>
+        <div class="leve12">
+          <div style="border: 1px solid black;margin: 20px;padding: 5px;">&lt;h1&gt;This is a heading&lt;/h1&gt;</div>
+          <div style="border: 1px solid black;margin: 20px;padding: 5px;">&lt;p&gt;This is a paragraph.&lt;/p&gt;</div>
+        </div>
+        <br>
+        <div style="padding-left: 15px;">CSS BOX MODEL</div>
+        <div class="border2 box-bk" style="padding: 15px 15px 30px 15px;margin: 15px;">
+          <div class="center">Margin</div>
+          <div class="no-border cssborder-bk" style="padding: 0px 15px 15px 15px;margin: 15px;">
+            <div class="center" style="padding: 5px 0px 0px 0px;">Border</div>
+            <div class="no-border box-bk" style="padding: 10px;margin: 5px 10px 10px 10px;">
+              <div class="center">Padding</div>
+              <div class="border2 content-bk center" style="padding: 45px;margin: 10px 30px 30px 30px;">Content</div>
+            </div>
+          </div>
+        </div>
+      <div style="text-align: left;font-size: 100%;">&lt;/body&gt;</div>
+    </div>
+    <div style="text-align: left;font-size: 100%;">&lt;/html&gt;</div>
+  </body>
+
+</html>
