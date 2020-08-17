@@ -1,0 +1,49 @@
+body {
+  background: #fff;
+  font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+}
+
+.text_container {
+  width: 700px;
+  margin: 10px auto 40px;
+  text-align: center;
+  color: #000000;
+}
+
+#title {
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+
+#host {
+  font-family: Consolas, monaco, monospace;
+  font-size: 18px;
+  line-height: 1.4;
+}
+
+#door_container {
+  text-align: center;
+  color: #fd8e45;
+}
+
+.door {
+  display: inline-block;
+  margin: 0 30px;
+}
+
+.thing_container {
+  margin: 30px;
+}
+
+a:link {
+  color: #fd8e45;
+}
+a:visited {
+  color: #fd8e45;
+}
+a:hover {
+  color: #ff6500;
+}
+a:active {
+  color: #ff6500;
+}
