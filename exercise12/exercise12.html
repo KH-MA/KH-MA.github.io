@@ -1,0 +1,89 @@
+<!doctype html>
+<html>
+
+  <head>
+    <title>Playing cards classification</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Free Web tutorials">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author" content="MA">
+    <link rel="stylesheet" href="Exercise12Styles.css">
+
+    <script>
+      function allowDrop(ev) {
+        ev.preventDefault();
+      }
+
+      function drag(ev) {
+        ev.dataTransfer.setData("text", ev.target.id);
+      }
+
+      function drop(ev) {
+        ev.preventDefault();
+        var data = ev.dataTransfer.getData("text");
+        ev.target.appendChild(document.getElementById(data));
+      }
+    </script>
+  </head>
+
+  <body>
+    <h1 id="title">Red or Black?</h1>
+    <p id="host">Please help classify the cards below.</p>
+    <div style="text-align: center;">
+      <div class="card_container">
+        <div class="card">
+          <img class="level1" id="card1_1" src="./card1.png">
+        </div>
+        <div class="card">
+          <img class="level2" id="card1_2" src="./card1.png" draggable="true" ondragstart="drag(event)">
+        </div>
+      </div>
+      <div class="card_container">
+        <div class="card">
+          <img class="level1" id="card2_1" src="./card2.png">
+        </div>
+        <div class="card">
+          <img class="level2" id="card2_2" src="./card2.png" draggable="true" ondragstart="drag(event)">
+        </div>
+      </div>
+      <div class="card_container">
+        <div class="card">
+          <img class="level1" id="card3_1" src="./card3.png">
+        </div>
+        <div class="card">
+          <img class="level2" id="card3_2" src="./card3.png" draggable="true" ondragstart="drag(event)">
+        </div>
+      </div>
+      <div class="card_container">
+        <div class="card">
+          <img class="level1" id="card4_1" src="./card4.png">
+        </div>
+        <div class="card">
+          <img class="level2" id="card4_2" src="./card4.png" draggable="true" ondragstart="drag(event)">
+        </div>
+      </div>
+      <div class="card_container">
+        <div class="card">
+          <img class="level1" id="card5_1" src="./card5.png">
+        </div>
+        <div class="card">
+          <img class="level2" id="card5_2" src="./card5.png" draggable="true" ondragstart="drag(event)">
+        </div>
+      </div>
+      <div class="card_container">
+        <div class="card">
+          <img class="level1" id="card6_1" src="./card6.png">
+        </div>
+        <div class="card">
+          <img class="level2" id="card6_2" src="./card6.png" draggable="true" ondragstart="drag(event)">
+        </div>
+      </div>
+      <div style="margin: 50px 30px 30px 30px">
+        <div class="red" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <div class="black" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+      </div>
+      <a href="./exercise12.html" style="font-size: 35px;">Back</a>
+    </div>
+  </body>
+
+</html>
